@@ -1,28 +1,68 @@
 <template>
   <div id="app">
-    <img alt="Vue logo" src="./assets/logo.png">
-    <HelloWorld msg="Welcome to Your Vue.js App"/>
+    <Loader v-bind:loaded="loaded" />
+    <div v-if="loaded" class="fadeIn hero-unit">
+      <HeaderLinks />
+      <MainContent />
+
+      <div class="row">
+        <div class="column">
+          <Frameworks />
+        </div>
+        <div class="column">
+          <Brands />
+        </div>
+      </div>
+    </div>
+
+    <div class="hide">
+      <img :src="require('./assets/images/bg/bg.jpg')" @load="onLoad" />
+      <img :src="require('./assets/images/bg/benatar.gif')" @load="onLoad" />
+      <img :src="require('./assets/images/bg/slo.gif')" @load="onLoad" />
+      <img :src="require('./assets/images/bg/duck-hunt.gif')" @load="onLoad" />
+    </div>
   </div>
 </template>
 
 <script>
-import HelloWorld from './components/HelloWorld.vue'
+import Loader from "./components/Loader";
+import HeaderLinks from "./components/HeaderLinks";
+import MainContent from "./components/MainContent";
+import Brands from "./components/Brands";
+import Frameworks from "./components/Frameworks";
+import metaData from "./metaData.js";
 
 export default {
-  name: 'App',
+  name: "App",
+  methods: {
+    onLoad() {
+      this.imgCount = this.imgCount + 1;
+      if (this.imgCount === this.numberOfImgs) {
+        this.loaded = true;
+      }
+    },
+  },
+  data() {
+    return {
+      loaded: false,
+      imgCount: 0,
+      numberOfImgs: 4,
+    };
+  },
   components: {
-    HelloWorld
-  }
-}
+    HeaderLinks,
+    MainContent,
+    Brands,
+    Frameworks,
+    Loader,
+  },
+  metaInfo: {
+    title: "Matt Hildenbrand - Technologist",
+    meta: metaData(),
+  },
+};
 </script>
 
-<style>
-#app {
-  font-family: Avenir, Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="scss">
+@import "./styles/main.scss";
 </style>
