@@ -1,0 +1,16 @@
+.footer {
+  p {
+    font-size: 19px;
+    text-align: center;
+    line-height: 26px;
+    padding: 50px 0 0 0;
+  }
+  svg {
+    &.vue {
+      top: 10px;
+    }
+    &.github {
+      top: 2px;
+    }
+  }
+}

@@ -13,6 +13,7 @@
           <Brands />
         </div>
       </div>
+      <Footer />
     </div>
 
     <div class="hide">
@@ -30,7 +31,8 @@ import HeaderLinks from "./components/HeaderLinks";
 import MainContent from "./components/MainContent";
 import Brands from "./components/Brands";
 import Frameworks from "./components/Frameworks";
-import metaData from "./metaData.js";
+import Footer from "./components/Footer";
+import metaData from "./helpers/metaData";
 
 export default {
   name: "App",
@@ -55,6 +57,7 @@ export default {
     Brands,
     Frameworks,
     Loader,
+    Footer,
   },
   metaInfo: {
     title: "Matt Hildenbrand - Technologist",

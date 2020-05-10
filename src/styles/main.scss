@@ -5,6 +5,7 @@
 @import "hero";
 @import "upgrade";
 @import "breakpoints";
+@import "footer";
 @import url("https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;800&display=swap");
 
 .hide {
@@ -30,7 +31,7 @@
   flex: 1;
   padding-right: 18px;
   a {
-    padding-bottom: 15px;
+    padding-bottom: 25px;
   }
 }
 

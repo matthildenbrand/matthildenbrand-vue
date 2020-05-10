@@ -1,4 +1,6 @@
-# vue-site
+# MattHildenbrand.com website built using Vue.js
+
+https://matthildenbrand.com
 
 ## Project setup
 

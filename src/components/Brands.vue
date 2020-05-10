@@ -1,6 +1,6 @@
 <template>
   <div class="brands">
-    <h2>The Brands</h2>
+    <h2>Past Brands</h2>
     <div class="row">
       <div class="column">
         <a

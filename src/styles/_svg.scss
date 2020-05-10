@@ -24,7 +24,7 @@ svg {
     height: 23px;
   }
   &.smart {
-    height: 28px;
+    height: 25px;
     &:hover path {
       fill: white;
     }
@@ -78,15 +78,15 @@ svg {
   }
   &.vue {
     path {
-      &.cls-1 {
+      &.a3807102-9d5f-47d9-a811-05203da4e64b {
         fill: #5f5f5f !important;
       }
     }
     &:hover {
-      path.cls-1 {
+      path.a3807102-9d5f-47d9-a811-05203da4e64b {
         fill: #35495e !important;
       }
-      path.cls-2 {
+      path.a2e92d9b-8a08-468d-a74d-4b214a7d9737 {
         fill: #41b883 !important;
       }
     }
@@ -106,9 +106,6 @@ svg {
 
       path.ba90b9d6-228a-4930-b121-edc3aae5ffa9 {
         fill: #16b9fd;
-      }
-      path.cls-2 {
-        fill: #41b883;
       }
     }
   }
