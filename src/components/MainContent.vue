@@ -37,8 +37,9 @@
       >.
     </p>
     <p class="second-section">
-      With close to 20 years of building and delivering amazing experiences
-      across the web, I have worked with many tech frameworks and brands.
+      With close to 20 years of building and delivering amazing experiences to
+      your computer and phone screens, I have worked with many tech frameworks
+      and brands.
     </p>
   </div>
 </template>
